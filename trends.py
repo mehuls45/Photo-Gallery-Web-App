@@ -4,10 +4,10 @@ import re,os
 os.chdir('C://xampp//htdocs//A')
 file = open('Trends.csv', 'w')
  
-consumerKey = "1mH1dGHI5OHQZFJEYRncFSWNP"
-consumerSecret = "GZEu1pR6UvSuuW2sO6JyBaegbTPPkeXMGiEFfZNLqVuUaL70le"
-accessToken = "3104899826-IsgnoKKElfaJbEIhtUZ8hPbfmuUAsu0A35XP5EW"
-accessTokenSecret = "05N6fDHfWecIdXj8DRrEsGT1fHzr9o1b0lA7W96gs5ALs"
+consumerKey = ""
+consumerSecret = ""
+accessToken = ""
+accessTokenSecret = ""
  
 auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
 auth.set_access_token(accessToken, accessTokenSecret)
@@ -16,9 +16,6 @@ api = tweepy.API(auth)
 #trends = api.trends_place(2295420) # woeid code for India
 trends = api.trends_place(1)
 #trends = api.trends_place(23424975) # UK
-
-
-#print(trends)
 
 for i in range(30):
     try:
@@ -30,7 +27,4 @@ for i in range(30):
         file.write(trend+','+volume)
         file.write('\n')
     except UnicodeEncodeError:
-        flag = 1
-        #print("")
-    
-#file.close() 
+        flag = 1 # does nothing. Insignificant

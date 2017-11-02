@@ -11,10 +11,10 @@ LinkList = []
 Search = ''
 
 #consumer key, consumer secret, access token, access secret.
-ckey="1mH1dGHI5OHQZFJEYRncFSWNP"
-csecret="GZEu1pR6UvSuuW2sO6JyBaegbTPPkeXMGiEFfZNLqVuUaL70le"
-atoken="3104899826-IsgnoKKElfaJbEIhtUZ8hPbfmuUAsu0A35XP5EW"
-asecret="05N6fDHfWecIdXj8DRrEsGT1fHzr9o1b0lA7W96gs5ALs"
+ckey=""
+csecret=""
+atoken=""
+asecret=""
 
 class listener(StreamListener):
 
