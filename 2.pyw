@@ -1,19 +1,17 @@
 import urllib.request
 import os,shutil
 
-os.chdir('C://Users//Mehul//Desktop//Pin')
+os.chdir('C://xampp//htdocs//A')
 
 saveFile = open('ImageLinks.csv','r')
 data = saveFile.read()
-
 data = data.split('\n')
 
-os.chdir('C://Users//Mehul//Desktop//Pin')
-shutil.rmtree('C://Users//Mehul//Desktop//Pin//ImageFolder')
+os.chdir('C://xampp//htdocs//A')
+shutil.rmtree('C://xampp//htdocs//A//ImageFolder')
 
-#if not os.path.exists('ImageFolder'):
 os.makedirs('ImageFolder')
-os.chdir('C://Users//Mehul//Desktop//Pin//ImageFolder')
+os.chdir('C://xampp//htdocs//A//ImageFolder')
 
 for i in range(len(data)-1):
     print(data[i])
