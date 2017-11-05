@@ -21,3 +21,6 @@ for i in range(0,min(10,len(x))):
 
 plt.show()
 plt.savefig('World.png')
+
+
+       # You know it
